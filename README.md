@@ -2,6 +2,8 @@
 
 rapidRide is a taxi application designed to streamline the process of assigning available cars to drivers. Administrators can add new cars to the system, assign cars to drivers, and manage driver requests. Drivers have the ability to accept or decline ride requests. The application is built using Next.js, TypeScript, and Firebase, offering a robust and scalable solution for managing taxi services.
 
+![Video Link](https://drive.google.com/drive/folders/1UDBGEEKjhfaYuz-BEL2ZDL371nqo5Ya1?usp=sharing)
+
 ![Login](./login.jpeg)
 
 ## Table of Contents
