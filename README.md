@@ -88,4 +88,4 @@ rapidRide is a taxi application designed to streamline the process of assigning 
   - View assigned car details.
   - Accept or decline ride requests.
 
-  ![driver](./driverDashboard.jpegs)
+  ![driver](./driverDashboard.jpeg)
