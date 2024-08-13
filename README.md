@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# rapidRide
 
-## Getting Started
+rapidRide is a taxi application designed to streamline the process of assigning available cars to drivers. Administrators can add new cars to the system, assign cars to drivers, and manage driver requests. Drivers have the ability to accept or decline ride requests. The application is built using Next.js, TypeScript, and Firebase, offering a robust and scalable solution for managing taxi services.
 
-First, run the development server:
+![Login](./login.jpeg)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Table of Contents
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+![Signup](./signup.jpeg)
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
+- **Admin Panel**:
+  - Add new cars to the system.
+  - Assign cars to available drivers.
+- **Driver Interface**: Accept or decline ride requests.
+- **Real-time Updates**: Keep the driver and admin dashboard updated in real time.
+- **Scalable Architecture**: Built with scalability in mind using Firebase.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Next.js**: Framework for building server-side rendered React applications.
+- **TypeScript**: Typed superset of JavaScript that compiles to plain JavaScript.
+- **Firebase**: Backend-as-a-Service (BaaS) providing various services like Authentication, Realtime Database, and Cloud Functions.
 
-## Deploy on Vercel
+## Installation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/yourusername/rapidRide.git
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2. **Navigate to the Project Directory**
+   ```bash
+   cd rapidRide
+   ```
+
+3. **Install Dependencies**
+   ```bash
+   npm install
+   ```
+
+4. **Configure Firebase**
+   - Go to your [Firebase Console](https://console.firebase.google.com/).
+   - Create a new project.
+   - Set up Authentication, Realtime Database, and any other required services.
+   - Copy the Firebase config object and paste it into a `.env.local` file in your project directory.
+     ```env
+     NEXT_PUBLIC_FIREBASE_API_KEY=your-api-key
+     NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your-auth-domain
+     NEXT_PUBLIC_FIREBASE_PROJECT_ID=your-project-id
+     NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your-storage-bucket
+     NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your-messaging-sender-id
+     NEXT_PUBLIC_FIREBASE_APP_ID=your-app-id
+     ```
+
+5. **Start the Development Server**
+   ```bash
+   npm run dev
+   ```
+
+6. **Open Your Browser**
+   - Visit [http://localhost:3000](http://localhost:3000) to see the application in action.
+
+## Usage
+
+![admin](./adminDashboard.jpeg)
+
+- **Admin**:
+  - Log in to the admin panel.
+  - Add new cars to the fleet.
+  - View available cars and drivers.
+  - Assign cars to drivers.
+
+- **Driver**:
+  - Log in to the driver dashboard.
+  - View assigned car details.
+  - Accept or decline ride requests.
+
+  ![driver](./driverDashboard.jpegs)
